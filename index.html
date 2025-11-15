@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Records Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Student Records and Sorting System</h1>
+        
+        <section id="add-student">
+            <h2>Add Student</h2>
+            <form id="add-form">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="number" id="marks" placeholder="Marks" required min="0" max="100">
+                <button type="submit">Save Student Record</button>
+            </form>
+        </section>
+
+        <section id="controls">
+            <h2>Sorting Options</h2>
+            <div class="control-group">
+                <label for="sort-algo">Algorithm:</label>
+                <select id="sort-algo">
+                    <option value="bubble">Bubble Sort</option>
+                    <option value="insertion">Insertion Sort</option>
+                    <option value="quick">Quick Sort</option>
+                    <option value="merge">Merge Sort</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label for="sort-by">Sort By:</label>
+                <select id="sort-by">
+                    <option value="marks">Marks</option>
+                    <option value="name">Name</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="sort-order">Order:</label>
+                <select id="sort-order">
+                    <option value="asc">Ascending</option>
+                    <option value="desc">Descending</option>
+                </select>
+            </div>
+            <button id="sort-button">Sort and Display</button>
+        </section>
+
+        <hr>
+
+        <section id="statistics">
+            <h2>📊 Key Statistics</h2>
+            <p>Total Students: <span id="total-students">0</span></p>
+            <p>Pass Students: <span id="pass-students">0</span></p>
+            <p>Fail Students: <span id="fail-students">0</span></p>
+            <p>Highest Marks: <span id="highest-marks">N/A</span></p>
+            <p>Lowest Marks: <span id="lowest-marks">N/A</span></p>
+        </section>
+
+        <hr>
+
+        <section id="results">
+            <h2>Results List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Rank</th>
+                        <th>Name</th>
+                        <th>Marks</th>
+                    </tr>
+                </thead>
+                <tbody id="student-list">
+                    </tbody>
+            </table>
+        </section>
+
+        <section id="download-section">
+            <button id="download-button">Download CSV</button>
+        </section>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

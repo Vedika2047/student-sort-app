@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f8;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-top: 25px;
+}
+
+/* Form and Controls Styling */
+#add-form input, #controls select, #add-form button, #sort-button, #download-button {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#add-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#add-form input {
+    flex-grow: 1;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1e7e34;
+}
+
+.control-group {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Statistics Styling */
+#statistics p {
+    background-color: #f8f9fa;
+    padding: 8px;
+    border-left: 5px solid #007bff;
+    margin-bottom: 8px;
+}
+/* Add this to your style.css file */
+
+/* 1. Ensure enough space for the Action column */
+th:last-child {
+    width: 150px; /* Space for the Action column */
+}
+
+/* 2. Styling for all action buttons */
+.action-btn {
+    padding: 5px 10px;
+    margin: 2px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 12px;
+}
+
+/* 3. Styling for the Edit button */
+.edit-btn {
+    background-color: #ffc107; /* Yellow/Amber color */
+    color: #333; /* Dark text */
+    border: 1px solid #e0a800;
+}
+
+/* 4. Styling for the Delete button */
+.delete-btn {
+    background-color: #dc3545; /* Red color */
+    color: white;
+    border: 1px solid #bd2130;
+}
+
+/* 5. Hover effects for better user experience */
+.edit-btn:hover {
+    background-color: #e0a800; /* Slightly darker yellow on hover */
+}
+
+.delete-btn:hover {
+    background-color: #bd2130; /* Slightly darker red on hover */
+}
