@@ -1,4 +1,4 @@
-const apiUrl = 'http://127.0.0.1:5000'; // Flask server address
+const apiUrl = 'https://student-sort-app.onrender.com'; // Flask server address
 const studentListBody = document.getElementById('student-list');
 
 // --- Helper Function for Comparison (Used by all sorting algorithms) ---
