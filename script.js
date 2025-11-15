@@ -1,4 +1,4 @@
-const apiUrl = 'https://vedika2047.github.io/student-sort-app/'; // Flask server address
+const apiUrl = 'http://vedika2047.pythonanywhere.com'; // Flask server address
 const studentListBody = document.getElementById('student-list');
 
 // --- Helper Function for Comparison (Used by all sorting algorithms) ---
