@@ -1,4 +1,5 @@
 🎓 Student Rank Management System
+
 Aa ek Python-Flask based web application che je student records manage karva ane rank generate karva mate banavelu che. Aa project Firebase ane SQLite banné na features ne dhyan ma rakhi ne banavyu che.
 
 🌟 Key Highlights
